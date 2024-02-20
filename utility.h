@@ -7,3 +7,10 @@
 // then be sure to  #include "utility.h" in the file where you use
 // these functions
 
+#ifndef UTILITY_H
+#define UTILITY_H
+
+bool approxEqual(double a, double b, double tolerance);
+
+#endif // UTILITY_H
+

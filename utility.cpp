@@ -8,3 +8,10 @@
 // then be sure to  #include "utility.h" in the file where you use
 // these functions
 
+#include "utility.h" // Make sure to include the header
+#include <cmath> // For std::fabs
+
+bool approxEqual(double a, double b, double tolerance) {
+    return std::fabs(a - b) < tolerance;
+}
+

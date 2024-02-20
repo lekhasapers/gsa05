@@ -19,7 +19,7 @@ struct Point {
 // x and y axes.    Note that we can have a struct inside a struct!
 
 struct Box {
-  Point ul; // upper left corner
+  Point upperLeft; // upper left corner
   double width;
   double height;
 }; // Now we can declare data items of type "struct Box"
