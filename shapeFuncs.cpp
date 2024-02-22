@@ -47,7 +47,7 @@ string boxToString(Box b, int precision) {
   
   // SAMPLE FORMAT (precision = 2): "ul=(3.4,-5),w=5,h=7"
  std::ostringstream stream;
-stream << std::fixed<<std::setprecision(precision-1);
+stream <<std::setprecision(precision);
 stream << "ul=(" << b.ul.x << "," << b.ul.y <<"),";
 stream << "w=" << b.width <<",";
 stream << "h=" << b.height;
