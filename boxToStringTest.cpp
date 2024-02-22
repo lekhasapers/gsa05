@@ -20,4 +20,6 @@ int main() {
   return 0;
 }
 
+//(precision = 2): "ul=(3.4,-5),w=5,h=7
+
 
