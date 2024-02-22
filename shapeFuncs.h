@@ -6,8 +6,8 @@ using std::string;
 #include "shapes.h"
 
 
-string pointToString(Point p, int precision=3);
-string boxToString(Box b, int precision=3);
+string pointToString(Point p, int precision = 3);
+string boxToString(Box b, int precision = 3);
 double distanceBetween(Point p, Point q);
 bool pointsApproxEqual(Point p1, Point p2, double tolerance=0.0001);
 bool boxesApproxEqual(Box b1, Box b2, double tolerance=0.0001);

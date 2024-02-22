@@ -10,12 +10,12 @@ int main() {
   
   Box b1 = {p1, 5.0, 6.0};
 
-  assertEquals("ul=(3,4),w=5,h=6", boxToString(b1, 1), "boxToString(b1,1)");
-  assertEquals("ul=(3.2,4.2),w=5.2,h=6.2", boxToString(b1, 2), "boxToString(b1, 2)");
-  assertEquals("ul=(3.22,4.22),w=5.22,h=6.22", boxToString(b1, 3), "boxToString(b1, 3)");
-  assertEquals("ul=(3.222,4.222),w=5.222,h=6.222", boxToString(b1,4), "boxToString(b1,4)");
-  assertEquals("ul=(3.2222,4.2222),w=5.2222,h=6.2222", boxToString(b1, 5), "boxToString(b1,5)");
-  assertEquals("ul=(3.22222,4.22222),w=5.22222,h=6.22222", boxToString(b1, 6), "boxToString(b1,6)");
+  assertEquals("ul=(3.0,4.0),w=5.0,h=6.0", boxToString(b1, 1), "boxToString(b1,1)");
+  assertEquals("ul=(3.00,4.00),w=5.00,h=6.00", boxToString(b1, 2), "boxToString(b1, 2)");
+  assertEquals("ul=(3.000,4.000),w=5.000,h=6.000", boxToString(b1, 3), "boxToString(b1, 3)");
+  assertEquals("ul=(3.0000,4.0000),w=5.0000,h=6.0000", boxToString(b1,4), "boxToString(b1,4)");
+  assertEquals("ul=(3.00000,4.00000),w=5.00000,h=6.00000", boxToString(b1, 5), "boxToString(b1,5)");
+  assertEquals("ul=(3.000000,4.000000),w=5.000000,h=6.000000", boxToString(b1, 6), "boxToString(b1,6)");
 
   return 0;
 }
