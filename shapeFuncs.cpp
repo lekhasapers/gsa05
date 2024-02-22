@@ -38,7 +38,7 @@ void initPoint(struct Point *p, double xVal, double yVal) {
 
 string pointToString(Point p, int precision) {
   ostringstream oss;
-  oss << setprecision(3); // set precision to 3 decimal places
+  oss << setprecision(precision); // set precision to 3 decimal places
   oss << "(" << p.x << "," << p.y << ")";
   return oss.str();
 }
