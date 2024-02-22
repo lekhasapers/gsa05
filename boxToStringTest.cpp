@@ -8,9 +8,9 @@ int main() {
   initPoint (&p1, 3.0,4.0);
   initPoint(&p2, 3.14159,6.2831853071);
   
-  Box b1 = {p1, 5.0, 10.0};
+  Box b1 = {p1, 5.0, 6.0};
 
-  assertEquals("ul=(3,4),w=5,h=10", boxToString(b1, 1), "boxToString(b1,1)");
+  assertEquals("ul=(3,4),w=5,h=6", boxToString(b1, 1), "boxToString(b1,1)");
   assertEquals("ul=(3.2,4.2),w=5.2,h=6.2", boxToString(b1, 2), "boxToString(b1, 2)");
   assertEquals("ul=(3.22,4.22),w=5.22,h=6.22", boxToString(b1, 3), "boxToString(b1, 3)");
   assertEquals("ul=(3.222,4.222),w=5.222,h=6.222", boxToString(b1,4), "boxToString(b1,4)");
