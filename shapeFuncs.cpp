@@ -70,7 +70,7 @@ bool pointsApproxEqual(Point p1,
 bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
 	bool cornersEqual = approxEqual(b1.ul.x,b2.ul.x, tolerance) && approxEqual(b1.ul.y, b2.ul.y, tolerance);
 	bool dimensionsEqual = approxEqual(b1.width, b2.width, tolerance) && approxEqual(b1.height, b2.height, tolerance);
-	return cornersEqual && dimensionsEqual;
+  return cornersEqual && dimensionsEqual;
   }
 
 
