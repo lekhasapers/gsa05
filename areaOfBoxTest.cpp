@@ -9,10 +9,10 @@ int main()
 
   Box r,s,t,u;
 
-  r.upperLeft.x = 0.0; r.upperLeft.y=10.0; r.width = 3.0;  r.height=4.0;
-  s.upperLeft.x = 0.0; s.upperLeft.y=10.0; s.width = 4.0;  s.height=3.0;
-  t.upperLeft.x = 0.0; t.upperLeft.y=10.0; t.width = 2.5;  t.height=4.0;
-  u.upperLeft.x = 0.0; u.upperLeft.y=10.0; u.width = 4.0;  u.height=15.0;
+  r.ul.x = 0.0; r.ul.y=10.0; r.width = 3.0;  r.height=4.0;
+  s.ul.x = 0.0; s.ul.y=10.0; s.width = 4.0;  s.height=3.0;
+  t.ul.x = 0.0; t.ul.y=10.0; t.width = 2.5;  t.height=4.0;
+  u.ul.x = 0.0; u.ul.y=10.0; u.width = 4.0;  u.height=15.0;
 
   assertEquals(12.0, areaOfBox(r), "areaOfBox(r)");
   assertEquals(12.0, areaOfBox(s), "areaOfBox(s)");

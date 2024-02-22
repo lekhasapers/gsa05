@@ -2,9 +2,6 @@
 #include "shapeFuncs.h"
 #include "tddFuncs.h"
 
-
-
-
 int main() {
 
   Point p1, p2;
@@ -19,6 +16,5 @@ int main() {
   assertEquals("ul=(3,6),w=3,h=3", boxToString(b2,0), "boxToString(b2,0)");
   assertEquals("ul=(3.1416,6.2832),w=2.7183,h=3.1416", boxToString(b2,4), "boxToString(b2,4)");
 
-		   
   return 0;
 }

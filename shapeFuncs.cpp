@@ -48,7 +48,7 @@ string boxToString(Box b, int precision) {
   // SAMPLE FORMAT (precision = 2): "ul=(3.4,-5),w=5,h=7"
  std::ostringstream stream;
 stream << std::fixed<<std::setprecision(precision);
-stream << "ul=(" << b.upperLeft.x <<"," << b.upperLeft.y <<"),";
+stream << "ul=(" << b.ul.x <<"," << b.ul.y <<"),";
 stream << "w=" << b.width <<",";
 stream << "h=" << b.height;
 return stream.str(); // TODO: Delete this line and comment and replace with appropriate code
@@ -68,7 +68,7 @@ bool pointsApproxEqual(Point p1,
 }
 
 bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
-	bool cornersEqual = approxEqual(b1.upperLeft.x,b2.upperLeft.x, tolerance) && approxEqual(b1.upperLeft.y, b2.upperLeft.y, tolerance);
+	bool cornersEqual = approxEqual(b1.ul.x,b2.ul.x, tolerance) && approxEqual(b1.ul.y, b2.ul.y, tolerance);
 	bool dimensionsEqual = approxEqual(b1.width, b2.width, tolerance) && approxEqual(b1.height, b2.height, tolerance);
 	return cornersEqual && dimensionsEqual;
   }
@@ -85,7 +85,7 @@ bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
 
 void initBox(struct Box *b, double ulx, double uly, double w, double h)
 {
-  initPoint(&(b->upperLeft),ulx,uly);
+  initPoint(&(b->ul),ulx,uly);
 		  b->width = w;
 		  b->height = h;
 }
