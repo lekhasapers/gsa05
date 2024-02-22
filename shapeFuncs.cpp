@@ -38,7 +38,7 @@ void initPoint(struct Point *p, double xVal, double yVal) {
 
 string pointToString(Point p, int precision) {
   ostringstream oss;
-  oss << setprecision(precision); // set precision to 3 decimal places
+  oss << setprecision(3); // set precision to 3 decimal places
   oss << "(" << p.x << "," << p.y << ")";
   return oss.str();
 }
@@ -47,7 +47,7 @@ string boxToString(Box b, int precision) {
   
   // SAMPLE FORMAT (precision = 2): "ul=(3.4,-5),w=5,h=7"
  std::ostringstream stream;
-stream << std::fixed<<std::setprecision(precision);
+stream << std::fixed<<std::setprecision(3);
 stream << "ul=(" << b.ul.x <<"," << b.ul.y <<"),";
 stream << "w=" << b.width <<",";
 stream << "h=" << b.height;
